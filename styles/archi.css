@@ -13,6 +13,9 @@
 .display-flex{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
 
 /* dark 02 */
 .text-gray{
@@ -26,9 +29,23 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
 
-/* -----------------------------Header Styles------------------------------------  */
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
 
 
 /* ------------------------------------navbar styles-----------------------------  */
@@ -52,4 +69,115 @@
 .navbar,.banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+/* -------------------------Team and features related style------------ */
+
+
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    min-width: 530px;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.feature-description{
+    font-size: 1.3rem;
+}
+#quick-list{
+    font-weight: 500;
+}
+/* ------------------------------Responsive Media Query-------------------------------  */
+@media screen and (max-width:576px){
+    .navbar,.nav-links{
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column-reverse;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-left: 0;
+        min-width: auto;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .feature-description {
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .btn-primary{
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+}
+
+
+/* ----------------------Medium Device------------------------------- */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .navbar,
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .teams {
+        flex-direction: column-reverse;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for tablets */
+        gap: 20px;
+    }
+
+    .our-features {
+        margin-left: 0;
+        min-width: auto;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .feature-description {
+        padding: 0 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .btn-primary {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
 }
