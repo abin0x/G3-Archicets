@@ -203,6 +203,29 @@ main > section{
     filter: grayscale(100%);
 }
 
+
+
+/* ---------------footer------------------ */
+.site-footer {
+    background-color: #b6afaf;
+    /* dark gray */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: black;
+}
+
 /* ------------------------------Responsive Media Query-------------------------------  */
 @media screen and (max-width:576px){
     .navbar,.nav-links,.features{
